@@ -65,7 +65,7 @@ Apply a JQuery that runs an anonymous function when the button is clicked.
         If the number is in between these values but has many decimals, only display the number and 8 decimals. For this we can strigify the number and use the inbuilt substring method to display only the first 10 characters.
         This will allow our result to fit in the calculator display.
 
-      else if val is not a number or a full stop or AC or CE or x or ÷ or =, that is if val is + or - or % or an empty string (I would have done this after calculation step directly for better readability):
+      else if val is not a number or a full stop or AC or CE or x or ÷ or =, that is if val is + or - or % or an empty string:
         
         push temp to entries and val to entries
         reset temp to empty string
