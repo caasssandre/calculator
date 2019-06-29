@@ -22,6 +22,7 @@ input {
   border-radius: 5px;
   font-size: 43px;
   box-shadow: inset 6px 6px 8px rgb(13, 13, 72);
+  text-align: right;
 }
 .row {
   display: block
