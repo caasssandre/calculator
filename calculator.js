@@ -38,6 +38,9 @@ function clickNumberButton (buttonNumber){
       temporaryValue = ''
       isResult = false
     }
+    else if (temporaryValue.includes('.') && buttonNumber === '.'){
+      return
+    }
     temporaryValue = temporaryValue + (buttonNumber) 
     // show temporaryValue in input display (10 digits max)
     document.getElementById('inputField').value = temporaryValue
