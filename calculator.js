@@ -16,7 +16,7 @@ for (let i=0; i<buttons.length; i++){
 function runEventListener (i){
   clickSound.play()
   let currentButtonText = buttons[i].innerHTML
-  if ((!isNaN(currentButtonText) || currentButtonText === '.') && temporaryValue.length < 10){
+  if ((!isNaN(currentButtonText) || currentButtonText === '.' || (currentButtonText === '-' && temporaryValue === '')) && temporaryValue.length < 10){
     clickNumberButton(currentButtonText)
   }
   else if (currentButtonText === 'AC'){
@@ -102,6 +102,3 @@ function clickSymbolButton (buttonSymbol){
     temporaryValue = ''
   }
 }
-
-// add an event listener to each button with a for loop
-// stretch, make * and / come before - and +
